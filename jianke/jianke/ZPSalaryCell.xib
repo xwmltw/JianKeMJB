@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RobotoSlab-Regular.ttf">
+            <string>RobotoSlab-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZPSalaryCell" rowHeight="97" id="KGk-i7-Jjw" customClass="ZPSalaryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esX-Gg-kmp">
+                        <rect key="frame" x="24" y="59" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="XOi-Fl-nuy"/>
+                            <constraint firstAttribute="height" constant="21" id="fRM-G4-YnY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmW-Ee-6yM">
+                        <rect key="frame" x="24" y="16" width="43" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="LaB-eo-Gij"/>
+                            <constraint firstAttribute="height" constant="21" id="sb0-28-3hK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iww-dw-BlZ">
+                        <rect key="frame" x="67" y="16" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="GPD-su-0lE"/>
+                            <constraint firstAttribute="height" constant="5" id="cN5-cC-1KU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYi-sp-RXD">
+                        <rect key="frame" x="24" y="95" width="296" height="1"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.69999999999999996" id="OXJ-gD-Kt1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jO0-vq-58N">
+                        <rect key="frame" x="245" y="37" width="51" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DkP-JR-2ub"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="nGK-ME-Wzt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OYi-sp-RXD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="3Zu-Pg-Jvx"/>
+                    <constraint firstAttribute="bottom" secondItem="esX-Gg-kmp" secondAttribute="bottom" constant="16" id="5Eo-fg-oAL"/>
+                    <constraint firstItem="QmW-Ee-6yM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="Hjh-qG-ZUZ"/>
+                    <constraint firstAttribute="bottom" secondItem="OYi-sp-RXD" secondAttribute="bottom" id="Sc5-dJ-2z9"/>
+                    <constraint firstItem="iww-dw-BlZ" firstAttribute="top" secondItem="QmW-Ee-6yM" secondAttribute="top" id="TCS-nR-X1w"/>
+                    <constraint firstAttribute="trailing" secondItem="OYi-sp-RXD" secondAttribute="trailing" id="Zuy-pV-rTm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jO0-vq-58N" secondAttribute="trailing" constant="16" id="aGE-Q4-Hs7"/>
+                    <constraint firstItem="iww-dw-BlZ" firstAttribute="leading" secondItem="QmW-Ee-6yM" secondAttribute="trailing" id="qoa-VE-XjN"/>
+                    <constraint firstItem="jO0-vq-58N" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s86-Dy-Ufy"/>
+                    <constraint firstItem="QmW-Ee-6yM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="ssf-Ca-480"/>
+                    <constraint firstItem="esX-Gg-kmp" firstAttribute="leading" secondItem="QmW-Ee-6yM" secondAttribute="leading" id="uMu-sK-C42"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amountLabel" destination="jO0-vq-58N" id="V8f-dO-gez"/>
+                <outlet property="dateLabel" destination="esX-Gg-kmp" id="gJ5-Vz-k3z"/>
+                <outlet property="detailLabel" destination="QmW-Ee-6yM" id="RUn-yy-nkY"/>
+                <outlet property="pointView" destination="iww-dw-BlZ" id="VW1-KJ-SCt"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="312.5"/>
+        </tableViewCell>
+    </objects>
+</document>

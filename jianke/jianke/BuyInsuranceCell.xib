@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RobotoSlab-Regular.ttf">
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BuyInsuranceCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyInsuranceCell" rowHeight="187" id="KGk-i7-Jjw" customClass="BuyInsuranceCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="171.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyy-Sh-pwM">
+                        <rect key="frame" x="5" y="20" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="C5g-Nq-zpt"/>
+                            <constraint firstAttribute="width" constant="32" id="utN-c5-iFy"/>
+                        </constraints>
+                        <state key="normal" image="v230_check box"/>
+                        <state key="selected" image="v230_select"/>
+                        <connections>
+                            <action selector="btnSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vTa-VE-AnT"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="public_img_temporary" translatesAutoresizingMaskIntoConstraints="NO" id="T37-3e-uU4">
+                        <rect key="frame" x="40" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="HWi-WO-fDX"/>
+                            <constraint firstAttribute="width" constant="40" id="Zt0-7w-cmi"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_sex_male" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-uI-Y1g">
+                        <rect key="frame" x="88" y="16" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="iJW-JK-eTL"/>
+                            <constraint firstAttribute="height" constant="16" id="sBf-Y9-kSg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李大明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oK-De-Tmc">
+                        <rect key="frame" x="109" y="14" width="51" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="WG5-Ho-ZUq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job_xq_data" translatesAutoresizingMaskIntoConstraints="NO" id="WF4-BG-MxK">
+                        <rect key="frame" x="88" y="40" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="Wk3-qn-Xef"/>
+                            <constraint firstAttribute="height" constant="16" id="tip-6v-rs6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9/3, 9/5 至 9/12, 9/15, 9/17" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuR-oe-QU9">
+                        <rect key="frame" x="109" y="39.5" width="151" height="17.5"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="13"/>
+                        <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCW-Qd-sPi">
+                        <rect key="frame" x="550" y="20.5" width="9" height="17.5"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.3411764705882353" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEq-S1-zmC">
+                        <rect key="frame" x="561" y="17.5" width="23" height="26.5"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGK-Vb-bl7">
+                        <rect key="frame" x="32" y="65" width="548" height="99"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyP-hl-jRt">
+                                <rect key="frame" x="8" y="8" width="528" height="83"/>
+                                <connections>
+                                    <action selector="CubeOnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tKA-YD-eK2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zyP-hl-jRt" secondAttribute="trailing" constant="12" id="6BT-pa-9cq"/>
+                            <constraint firstAttribute="height" constant="99" id="6sN-tz-ZOB"/>
+                            <constraint firstItem="zyP-hl-jRt" firstAttribute="leading" secondItem="RGK-Vb-bl7" secondAttribute="leading" constant="8" id="8xD-im-JK3"/>
+                            <constraint firstAttribute="bottom" secondItem="zyP-hl-jRt" secondAttribute="bottom" constant="8" id="OYn-xF-v1x"/>
+                            <constraint firstItem="zyP-hl-jRt" firstAttribute="top" secondItem="RGK-Vb-bl7" secondAttribute="top" constant="8" id="wr7-gP-hGu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IRf-uI-Y1g" firstAttribute="leading" secondItem="T37-3e-uU4" secondAttribute="trailing" constant="8" id="02E-3V-8Zp"/>
+                    <constraint firstItem="T37-3e-uU4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="1kc-6c-hOE"/>
+                    <constraint firstItem="T37-3e-uU4" firstAttribute="centerY" secondItem="lyy-Sh-pwM" secondAttribute="centerY" id="28Y-ST-M0h"/>
+                    <constraint firstItem="bCW-Qd-sPi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0oK-De-Tmc" secondAttribute="trailing" constant="8" id="39D-1i-gbJ"/>
+                    <constraint firstItem="0oK-De-Tmc" firstAttribute="leading" secondItem="IRf-uI-Y1g" secondAttribute="trailing" constant="5" id="41O-dg-a5I"/>
+                    <constraint firstItem="FEq-S1-zmC" firstAttribute="leading" secondItem="bCW-Qd-sPi" secondAttribute="trailing" constant="2" id="52v-GZ-sGU"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QuR-oe-QU9" secondAttribute="trailing" constant="60" id="6Cq-5P-Acw"/>
+                    <constraint firstItem="lyy-Sh-pwM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="BXD-tV-JR8"/>
+                    <constraint firstItem="0oK-De-Tmc" firstAttribute="centerY" secondItem="IRf-uI-Y1g" secondAttribute="centerY" id="FVi-b1-8HK"/>
+                    <constraint firstItem="IRf-uI-Y1g" firstAttribute="top" secondItem="T37-3e-uU4" secondAttribute="top" id="OYW-k7-3ge"/>
+                    <constraint firstItem="RGK-Vb-bl7" firstAttribute="top" secondItem="QuR-oe-QU9" secondAttribute="bottom" constant="8" id="OZv-u5-Moo"/>
+                    <constraint firstAttribute="trailing" secondItem="FEq-S1-zmC" secondAttribute="trailing" constant="16" id="Omg-8P-A5l"/>
+                    <constraint firstItem="QuR-oe-QU9" firstAttribute="top" secondItem="0oK-De-Tmc" secondAttribute="bottom" constant="4" id="Y2h-9J-PAh"/>
+                    <constraint firstItem="WF4-BG-MxK" firstAttribute="leading" secondItem="T37-3e-uU4" secondAttribute="trailing" constant="8" id="cZR-3Q-31F"/>
+                    <constraint firstItem="QuR-oe-QU9" firstAttribute="centerY" secondItem="WF4-BG-MxK" secondAttribute="centerY" id="cxR-q7-A9h"/>
+                    <constraint firstItem="T37-3e-uU4" firstAttribute="leading" secondItem="lyy-Sh-pwM" secondAttribute="trailing" constant="3" id="dcj-hc-gGR"/>
+                    <constraint firstAttribute="trailing" secondItem="RGK-Vb-bl7" secondAttribute="trailing" constant="20" id="gm3-TR-PZc"/>
+                    <constraint firstItem="WF4-BG-MxK" firstAttribute="bottom" secondItem="T37-3e-uU4" secondAttribute="bottom" id="ipx-8X-MbI"/>
+                    <constraint firstItem="QuR-oe-QU9" firstAttribute="leading" secondItem="WF4-BG-MxK" secondAttribute="trailing" constant="5" id="nie-7h-EiR"/>
+                    <constraint firstItem="FEq-S1-zmC" firstAttribute="top" secondItem="bCW-Qd-sPi" secondAttribute="top" constant="-3" id="rzr-P6-gd1"/>
+                    <constraint firstItem="RGK-Vb-bl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="t3C-jY-ZXC"/>
+                    <constraint firstItem="FEq-S1-zmC" firstAttribute="centerY" secondItem="lyy-Sh-pwM" secondAttribute="centerY" constant="-6" id="ziS-ZS-wDd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="cxR-q7-A9h"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSelect" destination="lyy-Sh-pwM" id="zFq-VV-Il2"/>
+                <outlet property="cubeView" destination="RGK-Vb-bl7" id="EJi-NE-Pio"/>
+                <outlet property="cubeViewOnClick" destination="zyP-hl-jRt" id="r2J-mW-BzX"/>
+                <outlet property="imgHead" destination="T37-3e-uU4" id="GZz-p8-g6S"/>
+                <outlet property="imgSex" destination="IRf-uI-Y1g" id="gqE-8G-Sia"/>
+                <outlet property="labBoardDate" destination="QuR-oe-QU9" id="20z-Eo-ZKe"/>
+                <outlet property="labName" destination="0oK-De-Tmc" id="mYK-hX-Oxg"/>
+                <outlet property="labSalary" destination="FEq-S1-zmC" id="tHG-ec-22w"/>
+                <outlet property="layoutCubeView" destination="6sN-tz-ZOB" id="TqV-sE-i8J"/>
+            </connections>
+            <point key="canvasLocation" x="453" y="194.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="job_xq_data" width="24" height="24"/>
+        <image name="main_sex_male" width="21" height="21"/>
+        <image name="public_img_temporary" width="183" height="183"/>
+        <image name="v230_check box" width="24" height="24"/>
+        <image name="v230_select" width="24" height="24"/>
+    </resources>
+</document>

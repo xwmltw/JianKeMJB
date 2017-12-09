@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="XRB-lL-5Kv" customClass="PostJobCell_select">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XRB-lL-5Kv" id="16Z-Lu-rYg">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWD-W4-12i" userLabel="选择岗位类型View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v250_type" translatesAutoresizingMaskIntoConstraints="NO" id="xt9-bv-Ghc">
+                                <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="402-O2-Jww"/>
+                                    <constraint firstAttribute="height" constant="24" id="iQb-70-GII"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job_icon_xia" translatesAutoresizingMaskIntoConstraints="NO" id="Mff-Dm-0QS">
+                                <rect key="frame" x="560" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="OGj-Fl-VAE"/>
+                                    <constraint firstAttribute="height" constant="24" id="aST-yd-iwt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择岗位类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7n-UY-INZ">
+                                <rect key="frame" x="56" y="18" width="528" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.83999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocd-8s-fzv">
+                                <rect key="frame" x="56" y="54" width="528" height="1"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="A9W-eJ-aLs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mff-Dm-0QS" firstAttribute="centerY" secondItem="s7n-UY-INZ" secondAttribute="centerY" id="4Hv-b3-3jv"/>
+                            <constraint firstAttribute="height" constant="55" id="5It-nL-nVK"/>
+                            <constraint firstItem="s7n-UY-INZ" firstAttribute="centerY" secondItem="xt9-bv-Ghc" secondAttribute="centerY" id="8B6-Lz-6Wl"/>
+                            <constraint firstItem="ocd-8s-fzv" firstAttribute="leading" secondItem="EWD-W4-12i" secondAttribute="leading" constant="56" id="8UZ-Na-cDH"/>
+                            <constraint firstAttribute="trailing" secondItem="ocd-8s-fzv" secondAttribute="trailing" constant="16" id="Br9-TQ-oWN"/>
+                            <constraint firstItem="xt9-bv-Ghc" firstAttribute="leading" secondItem="EWD-W4-12i" secondAttribute="leading" constant="16" id="Pe3-yO-cFN"/>
+                            <constraint firstAttribute="trailing" secondItem="s7n-UY-INZ" secondAttribute="trailing" constant="16" id="Phx-Xq-EMz"/>
+                            <constraint firstItem="s7n-UY-INZ" firstAttribute="leading" secondItem="xt9-bv-Ghc" secondAttribute="trailing" constant="16" id="UGv-Tw-38v"/>
+                            <constraint firstItem="xt9-bv-Ghc" firstAttribute="centerY" secondItem="EWD-W4-12i" secondAttribute="centerY" id="Ujp-dq-kRk"/>
+                            <constraint firstAttribute="bottom" secondItem="ocd-8s-fzv" secondAttribute="bottom" id="uP6-ql-IxQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mff-Dm-0QS" secondAttribute="trailing" constant="8" id="wLi-ae-Uf6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EWD-W4-12i" firstAttribute="leading" secondItem="16Z-Lu-rYg" secondAttribute="leading" id="5dN-Ry-cVj"/>
+                    <constraint firstAttribute="trailing" secondItem="EWD-W4-12i" secondAttribute="trailing" id="MIR-Ro-CUs"/>
+                    <constraint firstItem="EWD-W4-12i" firstAttribute="top" secondItem="16Z-Lu-rYg" secondAttribute="top" id="tfp-b2-40o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgIcon" destination="xt9-bv-Ghc" id="1fv-S4-wTX"/>
+                <outlet property="imgRightIcon" destination="Mff-Dm-0QS" id="4n3-Vi-oUC"/>
+                <outlet property="labTitle" destination="s7n-UY-INZ" id="0eW-m9-72c"/>
+            </connections>
+            <point key="canvasLocation" x="468" y="375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="job_icon_xia" width="24" height="24"/>
+        <image name="v250_type" width="24" height="24"/>
+    </resources>
+</document>

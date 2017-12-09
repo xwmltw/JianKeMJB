@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="AddPayJiankeCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WW-S4-Als">
+                        <rect key="frame" x="0.0" y="6" width="48" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Tdu-QV-Lx5"/>
+                            <constraint firstAttribute="width" constant="48" id="xTM-lo-KP9"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="v3_public_select_0"/>
+                        <state key="selected" image="v3_public_select_1"/>
+                        <state key="highlighted" image="v3_public_select_1"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-Hu-fDt">
+                        <rect key="frame" x="52" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Zvt-bB-dz5"/>
+                            <constraint firstAttribute="height" constant="40" id="c1B-sZ-xGp"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-dL-3yh">
+                        <rect key="frame" x="100" y="28" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="dmG-e6-xNw"/>
+                            <constraint firstAttribute="height" constant="17" id="gai-Rp-PR4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajz-IS-uPP">
+                        <rect key="frame" x="125" y="26" width="463" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HJd-Hu-fDt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9M9-Ny-VLm"/>
+                    <constraint firstItem="6WW-S4-Als" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G2r-Zg-Et3"/>
+                    <constraint firstItem="HJd-Hu-fDt" firstAttribute="leading" secondItem="6WW-S4-Als" secondAttribute="trailing" constant="4" id="LTB-UF-4wO"/>
+                    <constraint firstItem="Ajz-IS-uPP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mmy-YP-pZ4"/>
+                    <constraint firstItem="GDJ-dL-3yh" firstAttribute="leading" secondItem="HJd-Hu-fDt" secondAttribute="trailing" constant="8" id="RXs-cJ-Dfo"/>
+                    <constraint firstItem="6WW-S4-Als" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Z8w-Dl-XvB"/>
+                    <constraint firstItem="GDJ-dL-3yh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eVL-RQ-JwQ"/>
+                    <constraint firstItem="Ajz-IS-uPP" firstAttribute="leading" secondItem="GDJ-dL-3yh" secondAttribute="trailing" constant="8" id="eor-d3-Qbr"/>
+                    <constraint firstAttribute="trailing" secondItem="Ajz-IS-uPP" secondAttribute="trailing" constant="12" id="xOb-VP-WMa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSelect" destination="6WW-S4-Als" id="cdd-Mv-zyi"/>
+                <outlet property="imgHead" destination="HJd-Hu-fDt" id="TE5-Wn-Jo1"/>
+                <outlet property="imgSex" destination="GDJ-dL-3yh" id="OnI-ld-Lmy"/>
+                <outlet property="labName" destination="Ajz-IS-uPP" id="ii9-Yi-L1E"/>
+            </connections>
+            <point key="canvasLocation" x="452" y="435"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="v3_public_select_0" width="28" height="28"/>
+        <image name="v3_public_select_1" width="28" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="TR0-YF-btD" customClass="PostJobCell_time">
+            <rect key="frame" x="0.0" y="0.0" width="621" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TR0-YF-btD" id="Y7c-G3-FZV">
+                <rect key="frame" x="0.0" y="0.0" width="621" height="163.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v250_schedule" translatesAutoresizingMaskIntoConstraints="NO" id="vwf-4x-A1r">
+                        <rect key="frame" x="16" y="16" width="24" height="24"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDe-zf-EhJ">
+                        <rect key="frame" x="56" y="0.0" width="565" height="160"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="hys-6y-X5T"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUP-1f-jXJ">
+                        <rect key="frame" x="56" y="120" width="541" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="5ax-wo-NIG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="添加兼职时间段" image="v220_add">
+                            <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5d-Fd-3ff">
+                        <rect key="frame" x="56" y="163" width="549" height="1"/>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VXt-bL-IvC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JUP-1f-jXJ" firstAttribute="top" secondItem="Y7c-G3-FZV" secondAttribute="top" constant="120" id="0Zb-hc-gMY"/>
+                    <constraint firstItem="Y5d-Fd-3ff" firstAttribute="leading" secondItem="PDe-zf-EhJ" secondAttribute="leading" id="2g0-XZ-Uyw"/>
+                    <constraint firstItem="JUP-1f-jXJ" firstAttribute="leading" secondItem="PDe-zf-EhJ" secondAttribute="leading" id="CiJ-VY-fA7"/>
+                    <constraint firstAttribute="trailing" secondItem="Y5d-Fd-3ff" secondAttribute="trailing" constant="16" id="Foq-sc-6hC"/>
+                    <constraint firstItem="PDe-zf-EhJ" firstAttribute="leading" secondItem="vwf-4x-A1r" secondAttribute="trailing" constant="16" id="T8F-GC-YTP"/>
+                    <constraint firstItem="PDe-zf-EhJ" firstAttribute="top" secondItem="Y7c-G3-FZV" secondAttribute="top" id="bqY-aY-3xo"/>
+                    <constraint firstItem="vwf-4x-A1r" firstAttribute="leading" secondItem="Y7c-G3-FZV" secondAttribute="leading" constant="16" id="fXl-aK-3WI"/>
+                    <constraint firstAttribute="trailing" secondItem="PDe-zf-EhJ" secondAttribute="trailing" id="idt-G1-Kgd"/>
+                    <constraint firstAttribute="bottom" secondItem="Y5d-Fd-3ff" secondAttribute="bottom" id="oJw-7L-20K"/>
+                    <constraint firstItem="vwf-4x-A1r" firstAttribute="top" secondItem="Y7c-G3-FZV" secondAttribute="top" constant="16" id="q1K-je-qjf"/>
+                    <constraint firstAttribute="trailing" secondItem="JUP-1f-jXJ" secondAttribute="trailing" constant="24" id="y2V-8w-WkX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAddTime" destination="JUP-1f-jXJ" id="TF7-Ge-fqj"/>
+                <outlet property="layoutTimeBtnToTop" destination="0Zb-hc-gMY" id="PJ8-Qx-724"/>
+                <outlet property="layoutViewHeight" destination="hys-6y-X5T" id="qRN-Wb-d4X"/>
+                <outlet property="timeBgView" destination="PDe-zf-EhJ" id="3Pf-ps-ZfJ"/>
+            </connections>
+            <point key="canvasLocation" x="517.5" y="460"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="v220_add" width="12" height="12"/>
+        <image name="v250_schedule" width="24" height="24"/>
+    </resources>
+</document>

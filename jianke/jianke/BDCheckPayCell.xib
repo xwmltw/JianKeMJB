@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="cP6-60-Ogm" customClass="BDCheckPayCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cP6-60-Ogm" id="S8m-Qn-VVb">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhY-RM-0Qn">
+                        <rect key="frame" x="16" y="16" width="42" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXR-Pc-rEd">
+                        <rect key="frame" x="16" y="44" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.44" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sU0-hH-b6G">
+                        <rect key="frame" x="546" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBe-UH-bNL">
+                        <rect key="frame" x="553" y="44" width="35" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.44" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yBe-UH-bNL" firstAttribute="centerY" secondItem="xXR-Pc-rEd" secondAttribute="centerY" id="3cg-X2-Es2"/>
+                    <constraint firstAttribute="trailing" secondItem="sU0-hH-b6G" secondAttribute="trailing" constant="12" id="Be4-A3-Dom"/>
+                    <constraint firstAttribute="trailing" secondItem="yBe-UH-bNL" secondAttribute="trailing" constant="12" id="G1o-zU-I5M"/>
+                    <constraint firstItem="xXR-Pc-rEd" firstAttribute="leading" secondItem="fhY-RM-0Qn" secondAttribute="leading" id="Os1-6U-dy8"/>
+                    <constraint firstItem="fhY-RM-0Qn" firstAttribute="top" secondItem="S8m-Qn-VVb" secondAttribute="top" constant="16" id="WAb-Rk-Y6P"/>
+                    <constraint firstItem="sU0-hH-b6G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fhY-RM-0Qn" secondAttribute="trailing" constant="8" id="dgt-6F-ASP"/>
+                    <constraint firstItem="sU0-hH-b6G" firstAttribute="centerY" secondItem="fhY-RM-0Qn" secondAttribute="centerY" id="dlE-rt-pwF"/>
+                    <constraint firstItem="xXR-Pc-rEd" firstAttribute="top" secondItem="fhY-RM-0Qn" secondAttribute="bottom" constant="8" id="j2f-BE-28i"/>
+                    <constraint firstItem="fhY-RM-0Qn" firstAttribute="leading" secondItem="S8m-Qn-VVb" secondAttribute="leading" constant="16" id="ntC-8K-yJL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labDate" destination="xXR-Pc-rEd" id="lBT-ER-spc"/>
+                <outlet property="labMoney" destination="sU0-hH-b6G" id="FX5-x2-2ul"/>
+                <outlet property="labPayTime" destination="yBe-UH-bNL" id="2Qw-pk-IIy"/>
+                <outlet property="labTitle" destination="fhY-RM-0Qn" id="TEt-bW-jR3"/>
+            </connections>
+            <point key="canvasLocation" x="414" y="307"/>
+        </tableViewCell>
+    </objects>
+</document>
