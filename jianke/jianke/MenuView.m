@@ -35,9 +35,9 @@ const CGFloat kMenuBtnMarginH = 0;      // 按钮水平间距
         [self.modelArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if (idx == 0 || idx == 1) {
                 [self.modelArray removeObjectAtIndex:0];
-                
+
             }
-        
+
         }];
         
         self.backgroundColor = [UIColor whiteColor];

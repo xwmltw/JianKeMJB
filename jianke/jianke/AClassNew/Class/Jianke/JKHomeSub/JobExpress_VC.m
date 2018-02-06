@@ -34,6 +34,22 @@
     return self;
 }
 
+- (void)getHistoryData{
+    if (self.isHome) {
+        NSArray* jobAry = [[UserData sharedInstance] getHomeJobList];
+        if (jobAry && jobAry.count > 0) {
+            self.arrayData = [[NSMutableArray alloc] initWithArray:jobAry];
+            
+            if ([XSJADHelper getAdIsShowWithType:XSJADType_homeJobList]) {
+                if (self.arrayData && self.arrayData.count >= 10) {
+                    JobModel *adModel = [[JobModel alloc] init];
+                    adModel.isSSPAd = YES;
+                    [self.arrayData insertObject:adModel atIndex:10];
+                }
+            }
+        }
+    }
+}
 - (void)getAllData{
     
     self.param = [[RequestParamWrapper alloc] init];
@@ -77,23 +93,6 @@
 
 
 }
-- (void)getHistoryData{
-    if (self.isHome) {
-        NSArray* jobAry = [[UserData sharedInstance] getHomeJobList];
-        if (jobAry && jobAry.count > 0) {
-            self.arrayData = [[NSMutableArray alloc] initWithArray:jobAry];
-            
-            if ([XSJADHelper getAdIsShowWithType:XSJADType_homeJobList]) {
-                if (self.arrayData && self.arrayData.count >= 10) {
-                    JobModel *adModel = [[JobModel alloc] init];
-                    adModel.isSSPAd = YES;
-                    [self.arrayData insertObject:adModel atIndex:10];
-                }
-            }
-        }
-    }
-}
-
 - (void)jobExpressCell_closeSSPAD{
     if (self.arrayData && self.arrayData.count >= 11) {
         [self.arrayData removeObjectAtIndex:10];
@@ -144,6 +143,10 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    JobModel *model = self.arrayData[indexPath.row];
+    if(model.today_is_can_apply.integerValue == 0){
+        return 133;
+    }
     return 94;
 }
 
@@ -167,7 +170,24 @@
         // 跳转到岗位详情
         DLog(@"跳转到有上拉/下拉的岗位详情");
         NSString *jobId = model.job_id.stringValue;
-
+//        NSInteger index = indexPath.row;
+        
+//        NSMutableArray *jobIdArray = [NSMutableArray array];
+//        for (JobModel *model in self.arrayData) {
+//            if (!model.isSSPAd) {
+//                NSString *jobIdStr = model.job_id.stringValue;
+//                [jobIdArray addObject:jobIdStr];
+//            }
+//        }
+        
+        //    NSArray *tmpJobIdArray = [self.arrayData valueForKeyPath:@"job_id"];
+        //    NSMutableArray *jobIdArray = [NSMutableArray array];
+        //    for (NSNumber *num in tmpJobIdArray) {
+        //        if (num) {
+        //            NSString *jobIdStr = num.stringValue;
+        //            [jobIdArray addObject:jobIdStr];
+        //        }
+        //    }
         
         JobDetail_VC *vc = [[JobDetail_VC alloc] init];
         vc.jobId = jobId;

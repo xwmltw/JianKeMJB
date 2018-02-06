@@ -1865,8 +1865,8 @@
         }
         
         // 具备抢单资格了..
-        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(jobModel.work_time_start.longValue * 1000)];
-        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(jobModel.work_time_end.longValue * 1000)];
+        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(jobModel.working_time_start_date.longValue * 1000)];
+        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(jobModel.working_time_end_date.longValue * 1000)];
         if ([startDateStr isEqualToString:endDateStr]) { // 只有一天
             // 弹框确定报名
             [self checkApplyJob];
@@ -1928,8 +1928,8 @@
 
 - (void)judgeAboutAccurateJob{
     if (self.jobDetailModel.parttime_job.is_accurate_job.integerValue == 1) {   //精确岗位
-        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.work_time_start.longValue * 1000)];
-        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.work_time_end.longValue * 1000)];
+        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.working_time_start_date.longValue * 1000)];
+        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.working_time_end_date.longValue * 1000)];
         if ([startDateStr isEqualToString:endDateStr]) { // 只有一天
             NSDate *workDate = [NSDate dateWithTimeIntervalSince1970:self.jobDetailModel.parttime_job.working_time_start_date.longLongValue * 0.001];
             workDate = [DateHelper zeroTimeOfDate:workDate];
@@ -1950,8 +1950,8 @@
 - (void)checkApplyJob{
     // 有报名限制就进入报名限制页面
     if ([self isSetCondition] && !self.isFromQrScan) {
-        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.work_time_start.longValue * 1000)];
-        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.work_time_end.longValue * 1000)];
+        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.working_time_start_date.longValue * 1000)];
+        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(self.jobDetailModel.parttime_job.working_time_end_date.longValue * 1000)];
         
         if ([startDateStr isEqualToString:endDateStr]) { // 只有一天
             [self goToConditionVcWithCalendar:YES];
@@ -2019,8 +2019,8 @@
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 260, 300)];
     
     DateSelectView *dateView = [[DateSelectView alloc] initWithFrame:CGRectMake(0, 0, 260, 260)];
-    NSDate *startDate = [NSDate dateWithTimeIntervalSince1970:self.jobDetailModel.parttime_job.work_time_start.longValue];
-    NSDate *endDate = [NSDate dateWithTimeIntervalSince1970:self.jobDetailModel.parttime_job.work_time_end.longValue];
+    NSDate *startDate = [NSDate dateWithTimeIntervalSince1970:self.jobDetailModel.parttime_job.working_time_start_date.longValue];
+    NSDate *endDate = [NSDate dateWithTimeIntervalSince1970:self.jobDetailModel.parttime_job.working_time_end_date.longValue];
     if (startDate.timeIntervalSince1970 < [NSDate date].timeIntervalSince1970) {
         startDate = [NSDate date];
     }
@@ -2202,8 +2202,8 @@
                         [weakSelf selectWorkDate];
                     } else {
                         // 具备抢单资格了..
-                        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(weakSelf.jobDetailModel.parttime_job.work_time_start.longValue * 1000)];
-                        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(weakSelf.jobDetailModel.parttime_job.work_time_end.longValue * 1000)];
+                        NSString *startDateStr = [DateHelper getDateFromTimeNumber:@(weakSelf.jobDetailModel.parttime_job.working_time_start_date.longValue * 1000)];
+                        NSString *endDateStr = [DateHelper getDateFromTimeNumber:@(weakSelf.jobDetailModel.parttime_job.working_time_end_date.longValue * 1000)];
                         if ([startDateStr isEqualToString:endDateStr]) { // 只有一天
                             // 弹框确定报名
                             [weakSelf checkApplyJob];

@@ -7566,7 +7566,7 @@
 					C50C36F11B96CBC300D73DB3 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = YPMA9SXXZT;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -8796,8 +8796,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = jianke/jianke.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Zhixiang Zheng (6G396F534N)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPMA9SXXZT;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -8852,8 +8852,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xsj.jkmj2;
 				PRODUCT_NAME = jianke;
-				PROVISIONING_PROFILE = "f90db261-da5c-4973-b77b-eb338ab1690b";
-				PROVISIONING_PROFILE_SPECIFIER = jianke_MJB;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SHARED_PRECOMPS_DIR = /Users/xiaomk/work/jiankejianzhi_dev/jianke/jianke;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -8866,8 +8866,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = jianke/jianke.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Fuzhou Time Network Technology Co., Ltd. (YPMA9SXXZT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPMA9SXXZT;
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -8922,8 +8922,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xsj.jkmj2;
 				PRODUCT_NAME = jianke;
-				PROVISIONING_PROFILE = "f90db261-da5c-4973-b77b-eb338ab1690b";
-				PROVISIONING_PROFILE_SPECIFIER = jianke_MJB;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SHARED_PRECOMPS_DIR = /Users/xiaomk/work/jiankejianzhi_dev/jianke/jianke;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";

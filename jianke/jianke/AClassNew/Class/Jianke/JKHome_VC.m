@@ -344,7 +344,6 @@
 #pragma mark - ***** 按钮事件 ******
 - (void)localBtnOnclick{
 
-
     
     CitySelectController* cityVC = [[CitySelectController alloc] init];
     cityVC.showSubArea = NO;
@@ -776,10 +775,10 @@
     }
     
     ClientGlobalInfoRM *globalInfoRM = [[XSJRequestHelper sharedInstance] getClientGlobalModel];
-    if (globalInfoRM.is_not_support_zhong_bao.integerValue != 1) {
+//    if (globalInfoRM.is_not_support_zhong_bao.integerValue != 1) {
         // 特色入口
         [self initMenuView];
-    }
+//    }
     
     // 兼客头条
     [self importantNew];
@@ -919,9 +918,14 @@
     NSNumber* msgCount = notification.userInfo[@"msgCount"];
     ELog(@"Jk====msgCount:%@",msgCount);
     dispatch_async(dispatch_get_main_queue(), ^{
-        
-        UITabBarItem *item = [self.tabBarController.tabBar.items objectAtIndex:2];
-        
+            ClientGlobalInfoRM *globalInfoRM = [[XSJRequestHelper sharedInstance] getClientGlobalModel];
+            UITabBarItem *item;
+            if (globalInfoRM.is_not_support_zhong_bao.integerValue != 1) {
+                //tabbar红点
+                item = [self.tabBarController.tabBar.items objectAtIndex:3];
+            }else{
+                item = [self.tabBarController.tabBar.items objectAtIndex:2];
+            }
         if (msgCount.intValue <= 0) {
             item.badgeValue = nil;
         }else{

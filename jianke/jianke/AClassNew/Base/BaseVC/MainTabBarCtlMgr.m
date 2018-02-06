@@ -67,6 +67,12 @@ Impl_SharedInstance(MainTabBarCtlMgr);
         nav3.tabBarItem.image = [UIImage imageNamed:@"home_tabbar_3_0"];
         nav3.tabBarItem.selectedImage = [[UIImage imageNamed:@"home_tabbar_3_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         [nav3.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor XSJColor_tGrayDeepTinge]} forState:UIControlStateSelected];
+    
+    ZBHome_VC *vc5 = [[ZBHome_VC  alloc] init];
+    MainNavigation_VC *nav5 = [[MainNavigation_VC alloc] initWithRootViewController:vc5];
+    nav5.tabBarItem.title = @"任务";
+    nav5.tabBarItem.image = [UIImage imageNamed:@"home_tabbar_ZB_2_1"];
+    nav5.tabBarItem.selectedImage = [[UIImage imageNamed:@"home_tabbar_ZB_2_0"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
         MyNewInfo_VC *vc4 = [[MyNewInfo_VC  alloc] init];
         MainNavigation_VC *nav4 = [[MainNavigation_VC alloc] initWithRootViewController:vc4];
@@ -74,10 +80,14 @@ Impl_SharedInstance(MainTabBarCtlMgr);
         nav4.tabBarItem.image = [UIImage imageNamed:@"home_tabbar_4_0"];
         nav4.tabBarItem.selectedImage = [[UIImage imageNamed:@"home_tabbar_4_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         [nav4.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor XSJColor_tGrayDeepTinge]} forState:UIControlStateSelected];
+    
+    if (globalInfoRM.is_not_support_zhong_bao.integerValue != 1) {
+        // 众包入口
+        tabbarCtrls = @[nav1,nav2,nav5,nav3,nav4];
         
+    }else{
         tabbarCtrls = @[nav1,nav2,nav3,nav4];
-    
-    
+    }
     self.rootTabbarCtl.viewControllers = nil;
     if (self.rootTabbarCtl.presentedViewController) {
         [self.rootTabbarCtl dismissViewControllerAnimated:NO completion:nil];
@@ -85,7 +95,7 @@ Impl_SharedInstance(MainTabBarCtlMgr);
     [self.rootTabbarCtl.tabBar clearAllSmallBadge];
     
     self.rootTabbarCtl.viewControllers = tabbarCtrls;
-    //    [UIHelper setKeyWindowWithVC:self.rootTabbarCtl];
+//        [UIHelper setKeyWindowWithVC:self.rootTabbarCtl];
     return self.rootTabbarCtl;
 }
 
@@ -215,7 +225,7 @@ Impl_SharedInstance(MainTabBarCtlMgr);
 //        if ([[UserData sharedInstance] getLoginType].integerValue == WDLoginType_Employer) {
 //            [self setSelectWithIndex:1];
 //        }else{
-            [self setSelectWithIndex:2];
+            [self setSelectWithIndex:3];
 //        }
     }
 

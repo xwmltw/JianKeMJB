@@ -113,53 +113,6 @@
             endingLineNumber = "152"
             landmarkName = "-getAllPictures"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32-[XSJPictureView getAllPictures]_block_invoke"
-                  moduleName = "jianke"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/%E5%85%BC%E5%AE%A2%E9%A9%AC%E7%94%B2%E5%8C%85/jianke-dev/jianke/jianke/AClass/IM/MessageDisplayKit/Classes/Views/MessageMenuViews/XSJPictureView.m"
-                  timestampString = "534396475.913411"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "154"
-                  endingLineNumber = "154"
-                  offsetFromSymbolStart = "426">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__copy_helper_block_.112"
-                  moduleName = "jianke"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/%E5%85%BC%E5%AE%A2%E9%A9%AC%E7%94%B2%E5%8C%85/jianke-dev/jianke/jianke/AClass/IM/MessageDisplayKit/Classes/Views/MessageMenuViews/XSJPictureView.m"
-                  timestampString = "534396475.918962"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.113"
-                  moduleName = "jianke"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/%E5%85%BC%E5%AE%A2%E9%A9%AC%E7%94%B2%E5%8C%85/jianke-dev/jianke/jianke/AClass/IM/MessageDisplayKit/Classes/Views/MessageMenuViews/XSJPictureView.m"
-                  timestampString = "534396475.923262"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -296,54 +249,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "jianke/AClassNew/Class/Jianke/&#x4ee3;&#x529e;&#x4e8b;&#x9879;/ZBHome_VC.m"
-            timestampString = "525686030.683666"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "-footerRefresh"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "jianke/AClassNew/Class/Jianke/JKHome_VC.m"
-            timestampString = "534396475.329743"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
-            landmarkName = "-cycleScrollView:didSelectItemAtIndex:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "jianke/AClassNew/Class/Jianke/JKHome_VC.m"
-            timestampString = "534396475.333008"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "416"
-            endingLineNumber = "416"
-            landmarkName = "-cycleScrollView:didSelectItemAtIndex:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "jianke/AClassNew/Class/LoginAndRegist/Regist_VC.m"
             timestampString = "532593947.79282"
             startingColumnNumber = "9223372036854775807"
@@ -367,6 +272,38 @@
             startingLineNumber = "75"
             endingLineNumber = "75"
             landmarkName = "-sendRegistRequest"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jianke/AClassNew/Helper/XSJADHelper.m"
+            timestampString = "537851064.663142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "+hadelModel:supportZB:block:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jianke/AClassNew/Base/NetWork/NetHelper.m"
+            timestampString = "538301501.634568"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-postRequest:andParam:withResponseBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

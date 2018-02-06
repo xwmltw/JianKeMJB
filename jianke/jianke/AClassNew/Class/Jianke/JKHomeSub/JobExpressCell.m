@@ -39,6 +39,7 @@
 @property (nonatomic, strong) UIButton *btnCloseSSP;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *layoutTitleRight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *layoutImgIconBotton;
+@property (weak, nonatomic) IBOutlet UIView *fullView;
 
 @end
 
@@ -47,7 +48,8 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     static NSString *identifier = @"JobExpressCell";
     JobExpressCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
+    cell.fullView.layer.borderWidth = 0.5;
+    cell.fullView.layer.borderColor = [MKCOLOR_RGB(255, 97, 142)CGColor];
     if (!cell) {
         static UINib* _nib;
         if (!_nib) {
@@ -74,7 +76,10 @@
                 self.botLine.hidden = YES;
             }
         }
-        
+        self.fullView.hidden = YES;
+        if (model.today_is_can_apply.integerValue == 0) {
+            self.fullView.hidden = NO;
+        }
         _jobModel = model;
         self.imgHot.hidden = YES;
         self.stcikImg.hidden = YES;
@@ -144,8 +149,8 @@
             self.imgApplyFull.hidden = model.has_been_filled.intValue != 1;
         }
         
-        NSString* starTime = [DateHelper getDateWithNumber:model.work_time_start];
-        NSString* endTime = [DateHelper getDateWithNumber:model.work_time_end];
+        NSString* starTime = [DateHelper getDateWithNumber:model.working_time_start_date];
+        NSString* endTime = [DateHelper getDateWithNumber:model.working_time_end_date];
         self.labDate.text = [NSString stringWithFormat:@"%@ 至 %@",starTime,endTime];
         
         NSString *distanceStr = @"";
